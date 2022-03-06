@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -19,7 +19,6 @@
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
-  "peerDependencies": {},
   "husky": {
     "hooks": {
       "pre-commit": "tsdx lint"
@@ -34,7 +33,11 @@
   "name": "tiny-utils",
   "author": "Naxrul Ahmed",
   "module": "dist/tiny-utils.esm.js",
-  "keywords": ["tiny-utils", "utils"],
+  "keywords": [
+    "tiny-utils",
+    "utils"
+  ],
+  "description": "common utils",
   "size-limit": [
     {
       "path": "dist/tiny-utils.cjs.production.min.js",

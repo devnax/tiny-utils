@@ -11,11 +11,11 @@ export const inArray = (item: any, arr: any[]) => isArray(arr) && arr.indexOf(it
 
 export const isEmpty = (val: any) => {
   if(isObject(val)){
-    return Object.keys(val).length ? true : false
+    return Object.keys(val).length ? false : true
   }else if(isArray(val)){
-    return val.length ? true : false
+    return val.length ? false : true
   }else if(isString(val)){
-    return val.trim().length ? true : false
+    return val.trim().length ? false : true
   }
-  return !val && true
+  return !val ? true : false
 }
